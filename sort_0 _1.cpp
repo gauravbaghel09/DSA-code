@@ -28,3 +28,32 @@ int main()
 
     return 0;
 }
+
+
+//O(n) time complexity 
+
+//#include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     vector<int> arr = {1, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0};
+//     int st = 0;
+//     int end = arr.size() - 1;
+//     while (st < end)
+//     {
+//         if (arr[st] == 1)
+//         {
+//             if (arr[end] != 1)
+//             {
+//                 swap(arr[st], arr[end]);
+//             }
+//             end--;
+//         }else{
+//             st++;
+//         }
+//     }
+//     for (int i = 0; i < arr.size(); i++)
+//     {
+//         cout << arr[i] << " ";
+//     }
+// }
