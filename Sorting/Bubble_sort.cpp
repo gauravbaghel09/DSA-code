@@ -16,11 +16,17 @@ void bubble_sort(vector<int> &arr)
 
     for (int i = 0; i < arr.size()-1; i++)
     {
+        int swapCount = 0;
         for (int j = i + 1; j < arr.size(); j++)
         {
             if (arr[j] < arr[i])
             {
                 swap(arr[j], arr[i]);
+                swapCount++;
+            }
+            if(swapCount == 0){
+                //already sorted no need to check further rounds.
+                break;
             }
         }
     }
