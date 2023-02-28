@@ -6,13 +6,16 @@ using namespace std;
 void selectionSort(vector<int> &arr)
 {
     // int n = arr.size() - 1;
+    //outer loop -> (n-1)rounds.
     for (int i = 0; i < arr.size() - 1; i++)
     {
-        int minInd = i;
+        int minInd = i; 
+        //inner loop -> index of minimum ele in range i -> n.
         for (int j = i + 1; j < arr.size(); j++)
         {
             if (arr[j] < arr[minInd])
             {
+                //new minimum ele, then store.
                 minInd = j;
             }
         }
